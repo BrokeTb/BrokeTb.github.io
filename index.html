@@ -1,128 +1,134 @@
-<!DOCTYPE html>
-<style> 
-	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
+<!DOCTYPE html>	
+<!--
+	~> I'm new to html and css stuff still learning... also fuck JS!!!
+-->
+<style>
+/* JetBrainsMono NerdFont - NavLink Font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
+
+html {
+	font-family: String Variable, sans-serif; /* Main Font */
+	background-color: rgb(10,10,10);
+	color: #FFFFFF;
+	margin: 8px;
+}
+
 </style>
 
-<html lang="" 
-	style="
-	       font-family: String Variable, sans-serif;
-	       background-color: rgb(10,10,10);
-	       color: #FFFFFF;
-		
-	       ">
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Broke's Realm</title>
+	<!-- 		favicon		 		-->
+	<link rel="icon" type="image/x-icon" href="pfp.png">
+</head>
 
- <head>
-    <meta charset="utf-8">
-    <title>Broke's Realm</title>
-    <link rel="icon" type="image/x-icon" href="pfp.png">
-  </head>
-		   <!--			 Navigation Bar				 -->
+<!--	 			Navigation Box				-->
 
-	<nav 
-		style="
-		       height: 100%;
-		       width: 200px;
-		       position: fixed;
-		       z-index: 1;
-		       top: 0;
-		       left: 0;
-		       background-color: rgb(40,40,40);
-		       padding: 20px 0px 20px 20px;
-		       
-			
-		     ">
+<style>
 
-			<img src="pfp.png" 
-				style="
-				       height: 16px;
-				       width: 16px;
-				">
-			<span style="color:rgb(255,90,90)"> BrokeTb </span>
-		</span>
-
-
-		<ul 
-			style=" 
-			       list-style: none;
-			       margin-left: -12px;
-			       margin-top: 2px;
-			       
-				">
-			<style>
-				.links {
-					text-decoration: none;
-					color: white;
-					font-family: JetBrains Mono, monospace;
-				}
-
-				.links:hover {
-					color: rgb(200,200,200);
-
-				}
-			</style>
-			<li ><a class="links" href="#">🏠 Home</a>
-				<li ><a class="links" href="#">|> YouTube</a>
-
-		</ul>
-
-		<p> The other me's </p>
-
-
-		<ul 
-			style=" 
-			       list-style: none;
-			       margin-left: -12px;
-			       margin-top: -12px;
-			       
-				">
-			<style>
-				.links {
-					text-decoration: none;
-					color: white;
-					font-family: JetBrains Mono, monospace;
-					transition: 
-				}
-
-				.links:hover {
-					color: rgb(200,200,200);
-				}
-			</style>
-				<li ><a class="links" href="#">♦ Sabre</a>
-				<li ><a class="links" href="#">♦ RadTau</a>
-
-		</ul>
-		
-		
-
+nav {
+	height: 		flex;
+	width: 			180px;
+	position: 		fixed;
+	z-index: 		1;
+	background-color: 	rgb(40,40,40);
+	padding: 		20px 0px 20px 20px;
+	border-radius: 		10px;
+	transition:		all 0.2s;
+}
+nav:hover {
+	border-style:		solid;
+	border-color:		rgb(200,120,120);
+	border-width:		1px;
+}
+</style>
+	<nav> 
+	<style>
+	.bpfp {
+		height: 	22px;
+		width:		22px;
+		margin-bottom: 	-3px;
+		border-radius: 	12px;
+	}
+	.mnavlinks {
+		list-style: 	none;
+		margin-left: 	-12px;
+		margin-top: 	2px;
+	}
+	.links {
+		text-decoration:	none;
+		color: 			white;
+		font-family: 		JetBrains Mono, monospace;
+	}
+	.links:hover {
+		color: rgb(200,200,200);
+	}
+	.unavlinks {
+		list-style:	none;
+		margin-left:	-12px;
+		margin-top:	-12px;
+	}
+	</style>
+		<img src="pfp.png" class="bpfp"> 
 	
-	</nav>
-    
-	<main style="
-		     padding: 12px;
-		     margin-left: 220px;
+		<span 
+			style="color:rgb(255,90,90)">BrokeTb</span>
+		</span>
+		
+		<ul class="mnavlinks"> 
+		
+			<li ><a class="links" href="index.html">🏠 Home</a>
+			<li ><a class="links" href="index.html">|> YouTube</a>
 
-		">
+		</ul>
+
+		<p>The other me's</p> <!-- uhh.... -->
+
+		<ul class="unavlinks">
+
+			<li ><a class="links" href="#">♦ Sabre</a>
+			<li ><a class="links" href="#">♦ RadTau</a>
+
+		</ul>
+		
+	</nav>
+
+
+
+
+
+<style>
+
+main {
+	padding: 12px;
+	margin-left: 220px;
+}
+
+</style>
+    
+	<main>
 	Hey Welcome... ik its sad to be broke...
 
 	<h3 style="text-align: center; color: rgb(240,150,150);">
-		Socials </br>
+		Socials</br>
 	</h3>
 
 	<p style="text-align: center; margin-top: -12px;">
 	
 	<style>
-		.sl {
-			text-decoration: none;
-			--gh: rgb(100,100,100);
-			--yt: rgb(200,100,100);
-			--mtx: rgb(170,170,170);
-			padding: 0px 4px;
-			transition: all 0.4s;
-		}
-		.sl:hover {
-			background-color: rgb(40,40,40);
-			border-radius: 5px;
-		}
+	.sl {
+		text-decoration: none;
+		--gh: rgb(100,100,100);
+		--yt: rgb(200,100,100);
+		--mtx: rgb(170,170,170);
+		padding: 0px 4px;
+		transition: all 0.4s;
+	}
+	.sl:hover {
+		background-color: rgb(40,40,40);
+		border-radius: 5px;
+	}
 	</style>
 		<a 
 	   		class="sl" 
@@ -150,10 +156,9 @@
 	</p>
 
 
-		
-    </main>
+	</main>
     
-        	
+    	
 
 
 
@@ -161,14 +166,19 @@
 
 
 
+    <footer style="
+		   font-size: 12px;
+		   position: fixed;
+		   left:0;
+		   bottom:0;
+		   width: 100%;
+		   color: white;
+		   text-align:center;
+		   margin-bottom: 32px;
+	">
+	    Unlisense lisense :), feel free. <a href="https://github.com/BrokeTb/broketb.github.io?tab=Unlicense-1-ov-file"><></a>
+
+    </footer>
 
 
-
-
-
-
-
-
-
-    <footer></footer>
 </html>
