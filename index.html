@@ -5,12 +5,13 @@
 <style>
 /* JetBrainsMono NerdFont - NavLink Font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 html {
-	font-family: String Variable, sans-serif; /* Main Font */
+	font-family: Pixelify Sans, sans-serif; /* Main Font */
 	background-color: rgb(10,10,10);
 	color: #FFFFFF;
 	margin: 8px;
+	font-size: 20px;
 }
 
 </style>
@@ -51,6 +52,11 @@ nav:hover {
 		margin-bottom: 	-3px;
 		border-radius: 	12px;
 	}
+	.ytpfp {
+		height:		22px;
+		width:		22px;
+		margin-bottom:	-5px;
+	}
 	.mnavlinks {
 		list-style: 	none;
 		margin-left: 	-12px;
@@ -60,6 +66,7 @@ nav:hover {
 		text-decoration:	none;
 		color: 			white;
 		font-family: 		JetBrains Mono, monospace;
+		font-size: 		16px;
 	}
 	.links:hover {
 		color: rgb(200,200,200);
@@ -79,7 +86,9 @@ nav:hover {
 		<ul class="mnavlinks"> 
 		
 			<li ><a class="links" href="index.html">🏠 Home</a>
-			<li ><a class="links" href="index.html">|> YouTube</a>
+			
+			<li ><a class="links" href="yt.html
+			"><img class="ytpfp" src="youtube.svg"/> YouTube</a>
 
 		</ul>
 
@@ -118,12 +127,12 @@ main {
 	
 	<style>
 	.sl {
-		text-decoration: none;
-		--gh: rgb(100,100,100);
-		--yt: rgb(200,100,100);
-		--mtx: rgb(170,170,170);
-		padding: 0px 4px;
-		transition: all 0.4s;
+		text-decoration:	none;
+		--gh:			rgb(100,100,100);
+		--yt:			rgb(200,100,100);
+		--mtx:			rgb(170,170,170);
+		padding: 		0px 4px;
+		transition:		all 0.4s;
 	}
 	.sl:hover {
 		background-color: rgb(40,40,40);
