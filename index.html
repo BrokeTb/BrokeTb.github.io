@@ -5,9 +5,8 @@
 <style>
 /* JetBrainsMono NerdFont - NavLink Font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 html {
-	font-family: Pixelify Sans, sans-serif; /* Main Font */
+	font-family: JetBrainsMono Nerd Font; /* Main Font */
 	background-color: rgb(10,10,10);
 	color: #FFFFFF;
 	margin: 8px;
@@ -30,7 +29,7 @@ html {
 
 nav {
 	height: 		flex;
-	width: 			180px;
+	width: 			170px;
 	position: 		fixed;
 	z-index: 		1;
 	background-color: 	rgb(40,40,40);
@@ -51,6 +50,7 @@ nav:hover {
 		width:		22px;
 		margin-bottom: 	-3px;
 		border-radius: 	12px;
+		margin-right:	-8px;
 	}
 	.ytpfp {
 		height:		22px;
@@ -60,7 +60,8 @@ nav:hover {
 	.mnavlinks {
 		list-style: 	none;
 		margin-left: 	-12px;
-		margin-top: 	2px;
+		margin-top: 	7px;
+		margin-bottom:	0px;
 	}
 	.links {
 		text-decoration:	none;
@@ -70,11 +71,6 @@ nav:hover {
 	}
 	.links:hover {
 		color: rgb(200,200,200);
-	}
-	.unavlinks {
-		list-style:	none;
-		margin-left:	-12px;
-		margin-top:	-12px;
 	}
 	</style>
 		<img src="pfp.png" class="bpfp"> 
@@ -90,15 +86,7 @@ nav:hover {
 			<li ><a class="links" href="yt.html
 			"><img class="ytpfp" src="youtube.svg"/> YouTube</a>
 
-		</ul>
-
-		<p>The other me's</p> <!-- uhh.... -->
-
-		<ul class="unavlinks">
-
-			<li ><a class="links" href="#">♦ Sabre</a>
-			<li ><a class="links" href="#">♦ RadTau</a>
-
+			<li ><a class="links" href="index.html">🔴 Live</a>
 		</ul>
 		
 	</nav>
@@ -111,7 +99,7 @@ nav:hover {
 
 main {
 	padding: 12px;
-	margin-left: 220px;
+	margin-left: 200px;
 }
 
 </style>
@@ -173,7 +161,15 @@ main {
 
 
 
-
+<style>
+.fl {
+	text-decoration: none;
+	color: white;
+}
+.fl:hover {
+	text-decoration-line: underline;
+}
+</style>
 
     <footer style="
 		   font-size: 12px;
@@ -185,7 +181,8 @@ main {
 		   text-align:center;
 		   margin-bottom: 32px;
 	">
-	    Unlisense lisense :), feel free. <a href="https://github.com/BrokeTb/broketb.github.io?tab=Unlicense-1-ov-file"><></a>
+	    Unlisense lisense :), feel free.
+	    <a class="fl" href="https://github.com/BrokeTb/broketb.github.io?tab=Unlicense-1-ov-file"><></a>
 
     </footer>
 
