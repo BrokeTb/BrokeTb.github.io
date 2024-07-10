@@ -3,8 +3,10 @@
 	~> I'm new to html and css stuff still learning... also fuck JS!!!
 -->
 <style>
+
 /* JetBrainsMono NerdFont - NavLink Font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
+
 html {
 	font-family: JetBrainsMono Nerd Font; /* Main Font */
 	background-color: rgb(10,10,10);
@@ -16,117 +18,56 @@ html {
 </style>
 
 <html lang="">
+
 <head>
-	<meta charset="utf-8">
+	<meta 
+		charset="utf-8"
+		name="viewport" content="width=device-width, initial-scale=1.0"
+	>
+	
 	<title>Broke's Realm</title>
+	
 	<!-- 		favicon		 		-->
 	<link rel="icon" type="image/x-icon" href="pfp.png">
+
 </head>
 
-<!--	 			Navigation Box				-->
+<!-- Main {{{ -->
 
 <style>
+		/* Headers */
+h1,h2,h3 {
+	text-align:	center;
+	--socials:	rgb(240,150,150);
 
-nav {
-	height: 		flex;
-	width: 			170px;
-	position: 		fixed;
-	z-index: 		1;
-	background-color: 	rgb(40,40,40);
-	padding: 		20px 0px 20px 20px;
-	border-radius: 		10px;
-	transition:		all 0.2s;
+}	
+
+		/* Social Links */
+.sl {
+	text-decoration:	none;
+	/* Link Colors ======================== */
+	--gh:			rgb(100,100,100);
+	--yt:			rgb(200,100,100);
+	--mtx:			rgb(170,170,170);
+	/* ==================================== */
+	padding: 		0px 4px;
+	transition:		all 0.4s;
 }
-nav:hover {
-	border-style:		solid;
-	border-color:		rgb(200,120,120);
-	border-width:		1px;
-}
-</style>
-	<nav> 
-	<style>
-	.bpfp {
-		height: 	22px;
-		width:		22px;
-		margin-bottom: 	-3px;
-		border-radius: 	12px;
-		margin-right:	-8px;
-	}
-	.ytpfp {
-		height:		22px;
-		width:		22px;
-		margin-bottom:	-5px;
-	}
-	.mnavlinks {
-		list-style: 	none;
-		margin-left: 	-12px;
-		margin-top: 	7px;
-		margin-bottom:	0px;
-	}
-	.links {
-		text-decoration:	none;
-		color: 			white;
-		font-family: 		JetBrains Mono, monospace;
-		font-size: 		16px;
-	}
-	.links:hover {
-		color: rgb(200,200,200);
-	}
-	</style>
-		<img src="pfp.png" class="bpfp"> 
-	
-		<span 
-			style="color:rgb(255,90,90)">BrokeTb</span>
-		</span>
-		
-		<ul class="mnavlinks"> 
-		
-			<li ><a class="links" href="index.html">🏠 Home</a>
-			
-			<li ><a class="links" href="yt.html
-			"><img class="ytpfp" src="youtube.svg"/> YouTube</a>
-
-			<li ><a class="links" href="index.html">🔴 Live</a>
-		</ul>
-		
-	</nav>
-
-
-
-
-
-<style>
-
-main {
-	padding: 12px;
-	margin-left: 200px;
+.sl:hover {
+	background-color: rgb(40,40,40);
+	border-radius: 5px;
 }
 
 </style>
     
-	<main>
-	Hey Welcome... ik its sad to be broke...
+<main>
+		
+		<h2 style="text-align: center;"> Hey Welcome... ik its sad to be broke...</h2>
 
-	<h3 style="text-align: center; color: rgb(240,150,150);">
-		Socials</br>
-	</h3>
+	<h3 style="color: var(--socials);">Socials</h3>
 
 	<p style="text-align: center; margin-top: -12px;">
 	
-	<style>
-	.sl {
-		text-decoration:	none;
-		--gh:			rgb(100,100,100);
-		--yt:			rgb(200,100,100);
-		--mtx:			rgb(170,170,170);
-		padding: 		0px 4px;
-		transition:		all 0.4s;
-	}
-	.sl:hover {
-		background-color: rgb(40,40,40);
-		border-radius: 5px;
-	}
-	</style>
 		<a 
 	   		class="sl" 
 			href="https://www.youtube.com/@BrokeTb"
@@ -134,6 +75,7 @@ main {
 			style="color: var(--yt);
 
 			">YouTube</a> ~
+		
 		<a 
 	   		class="sl" 
 			href="https://github.com/BrokeTb"
@@ -141,7 +83,6 @@ main {
 			style="color: var(--gh);
 
 			">Github</a>  ~
-	
 
 		<a 
 	   		class="sl" 
@@ -153,14 +94,15 @@ main {
 	</p>
 
 
-	</main>
+</main>
+<!-- }}} -->
     
     	
 
 
 
 
-
+<!-- Footer {{{ -->
 <style>
 .fl {
 	text-decoration: none;
@@ -185,6 +127,6 @@ main {
 	    <a class="fl" href="https://github.com/BrokeTb/broketb.github.io?tab=Unlicense-1-ov-file"><></a>
 
     </footer>
-
+<!-- }}} -->
 
 </html>
