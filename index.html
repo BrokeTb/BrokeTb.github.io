@@ -1,7 +1,10 @@
 <!DOCTYPE html>	
+
 <!--
 	~> I'm new to html and css stuff still learning... also fuck JS!!!
 -->
+
+<!-- Universal Styles {{{ -->
 <style>
 
 /* JetBrainsMono NerdFont - NavLink Font */
@@ -16,9 +19,12 @@ html {
 }
 
 </style>
+<!-- }}} -->
 
-<html lang="">
+<html>
 
+
+<!-- head {{{ -->
 <head>
 	<meta 
 		charset="utf-8"
@@ -27,10 +33,17 @@ html {
 	
 	<title>Broke's Realm</title>
 	
-	<!-- 		favicon		 		-->
-	<link rel="icon" type="image/x-icon" href="pfp.png">
+	<!--	favicon		-->
+	<link 
+		rel="icon" 
+		type="image/x-icon" 
+		href="pfp.png"
+	>
 
 </head>
+<!-- }}} -->
+
+
 
 <!-- Main {{{ -->
 
@@ -39,8 +52,13 @@ html {
 h1,h2,h3 {
 	text-align:	center;
 	--socials:	rgb(240,150,150);
+	--pagelinks:	rgb(210,150,130);
 
-}	
+}
+.slbox {
+	text-align: center;
+	margin-top: 0px;
+}
 
 		/* Social Links */
 .sl {
@@ -52,54 +70,88 @@ h1,h2,h3 {
 	/* ==================================== */
 	padding: 		0px 4px;
 	transition:		all 0.4s;
+} 
+.sl:hover, .sl:active {
+	background-color:	rgb(40,40,40);
+	border-radius:		5px;
+	padding:		4px 8px;
 }
-.sl:hover {
-	background-color: rgb(40,40,40);
-	border-radius: 5px;
-}
+.sl2 {
+	text-decoration:	none;
+	/* Link Colors 2 ====================== */
+	--brc:			rgb(230,100,100);
+	--live:			rgb(230,170,100);
+	/* ==================================== */
+	padding: 		2px 4px;
+	transition:		all 0.4s;
 
+}
+.sl2:hover, .sl2:active {
+	padding:		4px 8px;
+	background-color:	rgb(40,20,20);
+	border-radius:		5px;
+}
 </style>
     
 <main>
 		
-		<h2 style="text-align: center;"> Hey Welcome... ik its sad to be broke...</h2>
+	<h2>Hey Welcome... ik its sad to be broke...</h2>
+
+	<br>
 
 	<h3 style="color: var(--socials);">Socials</h3>
 
-	<p style="text-align: center; margin-top: -12px;">
+	<p class="slbox">
 	
 		<a 
 	   		class="sl" 
 			href="https://www.youtube.com/@BrokeTb"
 			target=_blank
-			style="color: var(--yt);
-
-			">YouTube</a> ~
+			style="color: var(--yt);"
+		
+		>YouTube</a> ~
 		
 		<a 
 	   		class="sl" 
 			href="https://github.com/BrokeTb"
 			target=_blank
-			style="color: var(--gh);
-
-			">Github</a>  ~
+			style="color: var(--gh);"
+		
+		>Github</a> ~
 
 		<a 
 	   		class="sl" 
 			href="#"
 			target=_blank
-			style="color: var(--mtx);
+			style="color: var(--mtx);"
 
-			">[matrix]</a>  
+		>[matrix]</a>
 	</p>
 
+	<br>
+
+	<h3 style="color: var(--pagelinks);">Maybe you'll like these :P</h3>
+	
+	<p class="slbox">
+
+		<a
+			class="sl2"
+			href="yt.html"
+			style="color: var(--brc);"
+
+		>|>BrokeContent</a> ~ 
+	
+		<a
+			class="sl2"
+			href=""
+			style="color: var(--live)"
+
+		>! Livestreams </a>
+	</p>
 
 </main>
 <!-- }}} -->
     
-    	
-
-
 
 
 <!-- Footer {{{ -->
@@ -114,7 +166,7 @@ h1,h2,h3 {
 </style>
 
     <footer style="
-		   font-size: 12px;
+		   font-size: 14px;
 		   position: fixed;
 		   left:0;
 		   bottom:0;
@@ -128,5 +180,7 @@ h1,h2,h3 {
 
     </footer>
 <!-- }}} -->
+
+
 
 </html>
